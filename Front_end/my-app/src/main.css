@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-tt {
+  font-family: 'TT', sans-serif;
+}
+.hero-img{
+  width: 100%;
+  background-image:url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDg4MDd8MHwxfHNlYXJjaHwyM3x8QnVzaW5lc3N8ZW58MHx8fHwxNjU5NDI3Mjk1&ixlib=rb-1.2.1&q=80&w=1080');
+  height: 60vh;
+  position: relative;
+  background-image: center top;  
+ background-size: cover;
+ 
+ 
+}
+.hero-img::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.heading{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.hero-img p {
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(2, 3, 8);
+  font-weight: 1000;
+  font-family:'Times New Roman', Times, serif;}
+
+
+@media  screen and(max-width : 640px) {
+
+.hero-img h1 {
+  
+  font-size: 2rem;
+  
+ 
+}
+}
+.hero-img h1{
+  color: rgb(39,55, 65);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 6rem;
+  font-weight: bold;
+  padding:  0.6rem 0 1.5rem ;
+}
+
