@@ -36,7 +36,7 @@ function CreateOffer () {
     }
     
     await axios.post(
-        "http://localhost:5000/api/offers/createOffer",data )
+        "http://localhost:5000/api/offers",data )
  
         navigate('/offers');
  
@@ -50,7 +50,7 @@ function CreateOffer () {
     <div className=" grid place-content-center flex-1">
     <div className="bg-white w-96 rounded-md p-4">
       <h1 className="text-center text-xl font-semibold pb-10 font-tt">
-      Create New PROJECT
+      Create New OFFER
       </h1>
       <div className="loginContainer">
         

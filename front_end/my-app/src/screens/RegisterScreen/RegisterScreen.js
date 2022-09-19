@@ -9,6 +9,7 @@ import Loading from "../../components/Loading";
 import ErrorMessage from "../../components/ErrorMessage";
 import "./RegisterScreen.css";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function RegisterScreen() {
     const [email, setEmail] = useState("");
@@ -19,6 +20,7 @@ function RegisterScreen() {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
   const [pic, setPic] = useState("");
+  const navigate = useNavigate();
 
 
   const submitHandler = async (e) => {
@@ -46,6 +48,8 @@ function RegisterScreen() {
      
          setLoading(false) ;
          localStorage.setItem("userInfo",JSON.stringify(data));
+         navigate('/profile');
+
      
     } 
     catch (error) {
