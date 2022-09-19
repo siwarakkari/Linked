@@ -2,9 +2,9 @@ import Image from './assets/AI.jpg';
 import Image2 from './assets/cyber2.jpeg';
 import Image3 from './assets/Cyber-security.jpg';
 
-import Image4 from './assets/ecommerce.png';
-import Image5 from './assets/chatbot.png';
-import Image6 from './assets/robot.jpg';
+import Image4 from './assets/pro2.jpg';
+import Image5 from './assets/Cyber-security.jpg';
+import Image6 from './assets/img3.jpg';
 import Product2 from './assets/Product2.jpg';
 
 import Product1 from './assets/Product1.jpg';
@@ -51,17 +51,20 @@ export const sliderItems = [{
 export const categories = [{
         id: 1,
         img: Image4,
-        title: "E-COMMERCE APP!",
+        title: "AL & ML",
+        href:'http://localhost:3000/Artificial_Intelligence',
     },
     {
         id: 2,
         img: Image5,
-        title: "CHATBOT IN HEALTH-CARE",
+        title: "Cyber-Security",
+        href:'http://localhost:3000/CyberSecurity',
     },
     {
         id: 3,
         img:Image6,
-        title: "DOG ROBOT",
+        title: "Web Development",
+        href:'http://localhost:3000/Web_Development',
     },
 ];
 

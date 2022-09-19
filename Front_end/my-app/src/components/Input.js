@@ -1,7 +1,7 @@
 import { useField, Formiz, useForm } from '@formiz/core';
 import React from 'react';
 import { useState, useMemo, useId } from 'react'
-import { Button } from './Button'
+import { Button , Link} from './Button'
 import messages from './validators'
 
 // interface Props extends FieldProps {
@@ -64,7 +64,7 @@ export function Form(props) {
       <form noValidate onSubmit={form.submit} className={props.className}>
         {props.children}
         <div className="flex justify-end">
-          <Button disabled={!form.isValid}>Login</Button>
+          <Button disabled={!form.isValid}>Sign Up</Button>
         </div>
       </form>
     </Formiz>

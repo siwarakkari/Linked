@@ -4,24 +4,21 @@ import Announcement from '../Announcement';
 import Categories from '../components/Categories';
 import Joboffer from '../components/Joboffer';
 import Offers from '../Offers';
-//import Slider2 from '../Slider2';
-import Slider from '../components/Slider';
-// import Navbar from "../components/Navbar";
-
-
-
+import Header from '../components/header';
+import Slider2 from "../Slider2";
 
 const Home = () => {
     return <div>
+    <Announcement/> 
+    <Header/>
+    <Categories/>
     
-    <Announcement/>
-    { /* <Slider/>*/}
-     <Categories/>
-     <Joboffer/>
-     <Offers/>
-      {/* <Slider2/> */}
-     <Footer/>
-    </div>;
+    <Joboffer/>
+    <Offers/>
+    <Slider2/>
+    <Footer/>
+  
+   </div>
    
 };
 

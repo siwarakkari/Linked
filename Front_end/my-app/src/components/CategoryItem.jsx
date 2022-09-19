@@ -28,14 +28,14 @@ justify-content:center;
 
 `;
 const  Title=styled.h1`
-color:white;
-margin-bottom:20px;
+color:Black;
+ margin-bottom:20px;
 `;
 const Button=styled.button`
 border:none;
 padding:10px;
 font-size:20px;
-background-color:#cdd3df;
+background-color:#FFEBCD;
 color:black;
 cursor:pointer;
 font-weight:600;
@@ -46,8 +46,9 @@ function CategoryItem({item}) {
    <Container>
     <Image src={item.img}/>
     <Info>
-        <Title>{item.title}</Title>
-        <Button>SELECT PRODUCT</Button>
+        <Title className ="font-medium font-black font-sans leading-tight text-5xl mt-0 mb-2 ">{item.title}</Title>
+        <a href={item.href}>
+        <Button >VIEW PROJECTS</Button></a>
     </Info>
      </Container>
   )

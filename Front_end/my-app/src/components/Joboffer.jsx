@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import Image7 from "../assets/JobOffer.jpg";
+import Image7 from "../assets/JobOffe.jpg";
 const Container=styled.div`
 margin-top:70px;
 flex:1;
